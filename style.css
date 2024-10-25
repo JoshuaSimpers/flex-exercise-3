@@ -16,12 +16,16 @@ body {
 }
 
 .header {
+  /*adds a padding of 8px for all contents of the header from the edge of the header*/
   padding: 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /*sets the display method to use flexboxes*/
   display: flex;
+  /*aligns the items within the header vertically to the center*/
   align-items: center;
+  /*puts as much space as possible between the individual items of the header based on the size of the webpage*/
   justify-content:space-between;
 }
 
@@ -54,23 +58,34 @@ a {
   color: rebeccapurple;
 }
 
+/*creates a class for the contents on the lefthand side of the header*/
 .left
 {
+  /*sets the display method of the lefthand contents from standard to flex*/
   display: flex;
+  /*adds a gap of 16px between each item on the lefthand side*/
   gap: 16px;
 }
 
+/*creates a class for the contents on the righthand side of the header*/
 .right
 {
+  /*sets the display method of the righthand contents from standard to flex*/
   display: flex;
+  /*adds a gap of 16px between each item on the righthand side*/
   gap: 16px;
 }
 
 ul {
   list-style-type: none;
+  /*sets the display method from standard to flex for the items within the unordered lists*/
   display: flex;
+  /*removes the margin*/
   margin: 0;
+  /*removes the padding*/
   padding: 0;
+  /*adds a 16px gap in between each item of the unordered lists*/
   gap: 16px;
+  /*aligns the items of the unordered lists vertically by their center*/
   align-items: center;
 }
